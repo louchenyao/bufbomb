@@ -5,8 +5,9 @@ pack: ans run.sh
 	cp ./buflab-handout/bufbomb ./2016011343/buflab-handout/
 	cp ./buflab-handout/hex2raw ./2016011343/buflab-handout/
 	cp run.sh ./2016011343
+	./2016011343/run.sh > ./2016011343/result.txt
 
 	tar cvfz 2016011343.tar.gz ./2016011343
 
 clean:
-	rm -rf ./2016011343
+	rm -rf ./2016011343 2016011343.tar.gz
